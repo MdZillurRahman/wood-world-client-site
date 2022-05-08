@@ -1,12 +1,14 @@
-import './App.css';
 import Header from './Components/Shared/Header/Header';
 import Footer from './Components/Shared/Footer/Footer';
 import NotFound from './Components/Shared/Not Found/NotFound';
 import Home from './Components/Headers Component/Home/Home/Home';
+import ItemDetail from './Components/Inventory/Item Detail/ItemDetail';
 import About from './Components/Headers Component/About/About';
 import Collection from './Components/Headers Component/Collection/Collection';
-import Login from './Components/Headers Component/Login/Login';
-import Register from './Components/Headers Component/Register/Register';
+import Login from './Components/Login/Login/Login';
+import Register from './Components/Login/Register/Register';
+import Profile from './Components/Headers Component/Profile/Profile';
+import RequireAuth from './Components/Login/Require Auth/RequireAuth';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-bootstrap';
 
@@ -22,8 +24,14 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
+        <Route path="/profile" element={<Profile></Profile>}></Route> 
+        <Route path="/inventory/:itemId" element={
+          <RequireAuth>
+            <ItemDetail></ItemDetail>
+          </RequireAuth>
+        }></Route>
       </Routes>
-      <Footer></Footer>
       <ToastContainer />
     </div>
   );

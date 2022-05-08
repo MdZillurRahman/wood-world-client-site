@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    background-color: lightseagreen;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+}
+
+img {
+    margin-right: 40px;
+}
+
+@media only screen and (max-width: 550px) {
+    .footer {
+        display: inline;
+    }
+    img{
+        margin-left: 60px;
+        margin-right: 20px;
+    }
+}

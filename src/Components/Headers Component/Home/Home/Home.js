@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import Inventory from '../Inventory/Inventory';
+import Inventory from '../../../Inventory/Inventory/Inventory';
 
 const Home = () => {
     return (

@@ -1,9 +1,26 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { signOut } from 'firebase/auth';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Link, useNavigate  } from 'react-router-dom';
 import logo from '../../../Images/wood-world-icon.png';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
+import Profile from '../../Headers Component/Profile/Profile';
+import UserIcon from '../../../Images/user-icon.png';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+    const navigate = useNavigate();
+
+    const handleSignOut = () => {
+        signOut(auth);
+        navigate('/login');
+    }
+
+const showProfile=() =>{
+    return <Profile></Profile>;
+}
+
     return (
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -18,17 +35,17 @@ const Header = () => {
                         </Nav>
                         <Nav>
                             <Nav.Link as={Link} to="about">About</Nav.Link>
-                            {/* { 
+                            { 
                                 user ?
                                     <NavDropdown title={<img src={UserIcon} style={{ width: '30px' }} alt="" />} id="navbarScrollingDropdown">
                                         <NavDropdown.Item href="profile" onClick={showProfile}>Profile
                                         </NavDropdown.Item>
                                         <button className='btn btn-link text-black text-decoration-none' onClick={handleSignOut}>Sign Out</button>
                                     </NavDropdown>
-                                    : }*/}
+                                    : 
                                     <Nav.Link as={Link} to="login">
                                         Login
-                                    </Nav.Link>
+                                    </Nav.Link>}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
