@@ -1,0 +1,12 @@
+.responsive{
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 550px){
+    .responsive{
+        width: 100%;
+        padding: 0;
+    }
+}

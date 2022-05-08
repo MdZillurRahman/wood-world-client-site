@@ -8,6 +8,7 @@ import Collection from './Components/Headers Component/Collection/Collection';
 import Login from './Components/Headers Component/Login/Login';
 import Register from './Components/Headers Component/Register/Register';
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-bootstrap';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }
