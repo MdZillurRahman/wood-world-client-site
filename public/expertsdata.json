@@ -1,0 +1,21 @@
+[
+//     https://i.ibb.co/k9gfnx4/Ferdousi.png
+// https://i.ibb.co/y4nhRzN/Jakir.png
+// https://i.ibb.co/R2MYQV8/Paul.png
+    {
+        "name": "Cris Paul",
+        "Experience": "5 years",
+        "img": "https://i.ibb.co/R2MYQV8/Paul.png"
+    },
+    {
+        "name": "Jakir Hossain",
+        "Experience": "3 years",
+        "img": "https://i.ibb.co/y4nhRzN/Jakir.png"
+    },
+    {
+        "name": "Ferdousi Jahan",
+        "Experience": "2.5 years",
+        "img": "https://i.ibb.co/k9gfnx4/Ferdousi.png"
+    }
+   
+]

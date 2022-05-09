@@ -48,7 +48,7 @@ const Register = () => {
     }
 
     return (
-        <div className='bg-info p-5'>
+        <div className='color p-5'>
             <div className='container rounded mx-auto responsive'>
                 <img className='w-25 my-3 d-block mx-auto' src={Logo} alt="" />
                 <h2 className='text-dark text-center mb-5'>Register</h2>
@@ -74,7 +74,7 @@ const Register = () => {
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
                         <Form.Check onClick={() => setAgree(!agree)} type="checkbox" label="Terms And Condition" />
                     </Form.Group>
-                    <Button disabled={!agree} variant="primary" type="submit" className='w-50 mx-auto my-4 d-block align-center'>
+                    <Button disabled={!agree} type="submit" className='btn-color w-50 mx-auto my-4 d-block align-center'>
                         Register
                     </Button>
                     <p>Already Have an Account? <Link to={"/login"} className='text-danger pe-auto text-decoration-none' onClick={navigateToLogIn}>Please LogIn</Link></p>

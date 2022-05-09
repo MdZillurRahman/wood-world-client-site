@@ -3,6 +3,12 @@
     padding: 20px;
     background-color: white;
 }
+.btn-color{
+    background-color: #966F33 ;
+}
+.color{
+    background-color: #966F33 ;
+}
 
 @media only screen and (max-width: 550px){
     .responsive{

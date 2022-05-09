@@ -1,0 +1,9 @@
+.expert{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.expert h2{
+    font-size: 25px;
+}

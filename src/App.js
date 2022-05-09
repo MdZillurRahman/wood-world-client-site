@@ -1,6 +1,7 @@
 import Header from './Components/Shared/Header/Header';
 import Footer from './Components/Shared/Footer/Footer';
 import NotFound from './Components/Shared/Not Found/NotFound';
+import Blogs from './Components/Shared/Blogs/Blogs';
 import Home from './Components/Headers Component/Home/Home/Home';
 import ItemDetail from './Components/Inventory/Item Detail/ItemDetail';
 import About from './Components/Headers Component/About/About';
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/about" element={<About></About>}></Route>
+        <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>

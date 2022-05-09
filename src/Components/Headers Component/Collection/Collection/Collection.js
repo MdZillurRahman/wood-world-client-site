@@ -29,7 +29,7 @@ const Collection = () => {
     }
 
     return (
-        <div>
+        <div className='pb-5'>
             <div className='container mb-5'>
                 <div className="row">
                     <h1 className='text-primary text-center mt-5'>Collection</h1>
@@ -53,7 +53,6 @@ const Collection = () => {
                     <button className='mt-4 btn btn-primary' onClick={addItem} type="submit">Add New Item</button>
                 </div>
             </div>
-            <Footer></Footer>
         </div>
 
     );

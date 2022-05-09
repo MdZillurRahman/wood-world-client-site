@@ -62,7 +62,7 @@ const Login = () => {
     }
 
     return (
-        <div className='bg-info p-5 '>
+        <div className='color p-5 '>
             <div className='container rounded mx-auto responsive'>
                 <img className='w-25 my-3 d-block mx-auto' src={Logo} alt="" />
                 <h2 className='text-dark text-center h1 mb-5'>Login</h2>
@@ -78,7 +78,7 @@ const Login = () => {
                         <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                     </Form.Group>
                     <p><button className='btn btn-link text-danger pe-auto text-decoration-none me-1 mx-auto d-block' onClick={resetPassword}>Forget Password? </button></p>
-                    <Button variant="primary" type="submit" className='w-50 mx-auto my-4 d-block align-center'>
+                    <Button type="submit" className='btn-color w-50 mx-auto my-4 d-block align-center'>
                         Log In
                     </Button>
                     {errorElement}

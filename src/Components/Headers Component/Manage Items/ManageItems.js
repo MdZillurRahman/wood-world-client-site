@@ -20,7 +20,7 @@ const ManageItems = () => {
         }
     }
     return (
-        <div className='w-50 mx-auto'>
+        <div className='w-50 mx-auto pb-5 mb-5'>
             <h2>Manage your Collections</h2>
             {
                 collection.map(item => <div key={item._id}>
