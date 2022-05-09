@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import './SingleItem.css';
 
-const ManageItems = () => {
+const SingleItem = ({singleItem}) => {
+    const {name, price, description, img, _id, quantity, supplierName} = singleItem;
+
     const [inventory, setInventory] = useState([]);
 
     useEffect( ()=>{
@@ -18,22 +21,24 @@ const ManageItems = () => {
             })
             .then(res => res.json())
             .then(data => {
-                const remaining = inventory.filter(item => item._id !== id);
+                const remaining = inventory.filter(singleItem => singleItem._id !== id);
                 setInventory(remaining);
             })
         }
     }
+
     return (
-        <div className='w-50 mx-auto'>
-            <h2>Manage your Inventory</h2>
-            {
-                inventory.map(item => <div key={item._id}>
-                    <h5>{item.name} <button onClick={() => handleDelete(item._id)}>X</button></h5>
-                    
-                </div>)
-            }
+        <div className='singleItem'>
+            <img className='w-100' src={img} alt="" />
+            <h2>Name: {name}</h2>
+            <p>Price: {price} $</p>
+            <p>Quantity : {quantity}</p>
+            <p>Supplier Name: {supplierName}</p>
+            <p><small>{description}</small></p>
+            <button onClick={() => handleDelete(singleItem._id)} className='btn btn-primary'>Delete</button>
+        
         </div>
     );
 };
 
-export default ManageItems;
+export default SingleItem;

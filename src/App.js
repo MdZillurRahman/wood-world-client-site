@@ -4,7 +4,7 @@ import NotFound from './Components/Shared/Not Found/NotFound';
 import Home from './Components/Headers Component/Home/Home/Home';
 import ItemDetail from './Components/Inventory/Item Detail/ItemDetail';
 import About from './Components/Headers Component/About/About';
-import Collection from './Components/Headers Component/Collection/Collection';
+import Collection from './Components/Headers Component/Collection/Collection/Collection';
 import Login from './Components/Login/Login/Login';
 import Register from './Components/Login/Register/Register';
 import Profile from './Components/Headers Component/Profile/Profile';
