@@ -4,7 +4,7 @@ const useCollection = () =>{
     const [collection, setCollection] = useState([]);
 
     useEffect( ()=>{
-        fetch('http://localhost:5000/collection')
+        fetch('https://thawing-badlands-17734.herokuapp.com//collection')
         .then(res => res.json())
         .then(data => setCollection(data));
     }, []);

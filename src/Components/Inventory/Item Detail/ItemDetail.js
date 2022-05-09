@@ -17,7 +17,7 @@ const ItemDetail = () => {
     }
 
     const delivered = id => {
-        // const url = `http://localhost:5000/inventory/${id}`;
+        // const url = `https://thawing-badlands-17734.herokuapp.com//inventory/${id}`;
         //     fetch(url, {
         //         method: 'PUT'
         //     })

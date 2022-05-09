@@ -4,7 +4,7 @@ const useItemDetail = itemId =>{
     const [item, setItem] = useState({});
 
     useEffect( () =>{
-        const url = `http://localhost:5000/inventory/${itemId}`;
+        const url = `https://thawing-badlands-17734.herokuapp.com//inventory/${itemId}`;
         fetch(url)
         .then(res=> res.json())
         .then(data => setItem(data));

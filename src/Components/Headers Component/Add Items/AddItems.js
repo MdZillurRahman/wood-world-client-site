@@ -5,7 +5,7 @@ const AddItems = () => {
     const { register, handleSubmit } = useForm();
     
     const onSubmit = data => {
-        const url = 'http://localhost:5000/collection';
+        const url = 'https://thawing-badlands-17734.herokuapp.com//collection';
         fetch(url, {
             method: 'POST',
             headers: {
