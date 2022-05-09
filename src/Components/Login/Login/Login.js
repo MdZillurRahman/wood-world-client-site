@@ -4,11 +4,12 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialLogin from '../Social Login/SocialLogin';
+import Loading from '../../Shared/Loading/Loading';
 import Logo from '../../../Images/logIn.png';
 import './Login.css';
 import { ToastContainer, toast } from 'react-toastify';
-
 import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
 
 
 
@@ -30,16 +31,19 @@ const Login = () => {
 
     let errorElement;
 
-    const handleLogIn = event => {
+    const handleLogIn = async event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
 
         signInWithEmailAndPassword(email, password);
+        const {data} = await axios.post('http://localhost:5000/login', {email});
+        localStorage.setItem('accessToken', data.accessToken);
+        navigate(from, { replace: true });
     }
 
-    if (user) {
-        navigate(from, { replace: true });
+    if (loading || sending) {
+        return <Loading></Loading>
     }
 
     if (error) {

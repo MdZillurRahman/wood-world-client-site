@@ -16,19 +16,22 @@ const ItemDetail = () => {
         navigate('/collection');
     }
 
-    const delivered = singleItem => {
-        const exists = inventory.find(item => item._id === singleItem.id);
-        if(exists){
-            const newQuantity = item.quantity - 1;
-            item.quantity = newQuantity;
-            
-            setInventory(item.quantity)
+    const delivered = id => {
+        // const url = `http://localhost:5000/inventory/${id}`;
+        //     fetch(url, {
+        //         method: 'PUT'
+        //     })
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         const newQuantity = data.quantity - 1;
+        //         item.quantity = newQuantity;
+        //         setInventory(item.quantity);
+        //     })
         
 }
-    }
 
     return (
-        <div>
+        <div className='mb-4 pb-4'>
             <div>
                 <div className='w-50 mb-5 mx-auto'>
                     <img className='w-100' src={img} alt="" />
@@ -37,7 +40,7 @@ const ItemDetail = () => {
                     <p>Quantity : {item.quantity}</p>
                     <p>Supplier Name: {supplierName}</p>
                     <p><small>Description : {description}</small></p>
-                    <button onClick={() => delivered(item)} className='btn btn-primary'>Delivered</button>
+                    <button onClick={() => delivered(item.id)} className='btn btn-primary'>Delivered</button>
                 </div>
             </div>
             <form>
