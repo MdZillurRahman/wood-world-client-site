@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useCollection from '../../Hooks/UseCollection/useCollection';
 
 const ManageItems = () => {
-    const [inventory, setInventory] = useState([]);
+    const [collection, setCollection] = useCollection();
 
-    useEffect( ()=>{
-        fetch('http://localhost:5000/collection')
-        .then(res => res.json())
-        .then(data => setInventory(data));
-    }, []);
 
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure?');
@@ -18,8 +14,8 @@ const ManageItems = () => {
             })
             .then(res => res.json())
             .then(data => {
-                const remaining = inventory.filter(item => item._id !== id);
-                setInventory(remaining);
+                const remaining = collection.filter(item => item._id !== id);
+                setCollection(remaining);
             })
         }
     }
@@ -27,7 +23,7 @@ const ManageItems = () => {
         <div className='w-50 mx-auto'>
             <h2>Manage your Inventory</h2>
             {
-                inventory.map(item => <div key={item._id}>
+                collection.map(item => <div key={item._id}>
                     <h5>{item.name} <button onClick={() => handleDelete(item._id)}>X</button></h5>
                     
                 </div>)

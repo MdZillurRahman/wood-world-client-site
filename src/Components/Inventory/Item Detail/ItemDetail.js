@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import useItemDetail from '../../Hooks/UseItemDetail/UseItemDetail';
+import useItemDetail from '../../Hooks/UseItemDetail/useItemDetail';
 import { useParams } from 'react-router-dom';
 import Footer from '../../Shared/Footer/Footer';
 

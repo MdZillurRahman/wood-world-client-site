@@ -1,4 +1,3 @@
-import { Toast } from 'bootstrap';
 import React from 'react';
 import { useForm } from "react-hook-form";
 
@@ -18,9 +17,7 @@ const AddItems = () => {
         .then(result =>{
             console.log(result);
         } )
-        Toast('Item Added');
     };
-
 
     return (
         <div className='w-50 mx-auto'>

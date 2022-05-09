@@ -13,6 +13,7 @@ import AddItems from './Components/Headers Component/Add Items/AddItems';
 import ManageItems from './Components/Headers Component/Manage Items/ManageItems';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-bootstrap';
+import Inventory from './Components/Inventory/Inventory/Inventory';
 
 function App() {
   return (
@@ -22,12 +23,17 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/about" element={<About></About>}></Route>
-        <Route path="/collection" element={<Collection></Collection>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/profile" element={<Profile></Profile>}></Route> 
+
+        <Route path="/collection" element={
+          <RequireAuth>
+            <Collection></Collection>
+          </RequireAuth>
+        }></Route>
         <Route path="/inventory/:itemId" element={
           <RequireAuth>
             <ItemDetail></ItemDetail>
