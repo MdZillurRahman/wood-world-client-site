@@ -1,3 +1,4 @@
+import { Toast } from 'bootstrap';
 import React from 'react';
 import { useForm } from "react-hook-form";
 
@@ -5,7 +6,7 @@ const AddItems = () => {
     const { register, handleSubmit } = useForm();
     
     const onSubmit = data => {
-        const url = `http://localhost:5000/inventory`;
+        const url = 'http://localhost:5000/inventory';
         fetch(url, {
             method: 'POST',
             headers: {
@@ -17,6 +18,7 @@ const AddItems = () => {
         .then(result =>{
             console.log(result);
         } )
+        Toast('Item Added');
     };
 
 
