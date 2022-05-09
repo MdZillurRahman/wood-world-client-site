@@ -12,6 +12,7 @@ const Collection = () => {
     const addItem = () => {
         navigate('/additems');
     }
+    
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {

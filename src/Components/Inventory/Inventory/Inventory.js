@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import useInventory from '../../Hooks/UseInventory/useInventory';
 import Footer from '../../Shared/Footer/Footer';
 import Item from '../Item/Item';
 import './Inventory.css';
 
 const Inventory = () => {
-    const [inventory, setInventory] = useState([]);
-
+    const [inventory, setInventory] = useInventory();
     const navigate = useNavigate();
-
-    useEffect(() => {
-        fetch('http://localhost:5000/inventory')
-            .then(res => res.json())
-            .then(data => setInventory(data));
-    }, [])
 
     const manageInventories = () => {
         navigate('/collection');
@@ -37,7 +31,6 @@ const Inventory = () => {
                     <button className='mt-4 btn btn-primary' onClick={manageInventories} type="submit">Manage Inventories</button>
                 </div>
             </div>
-            <Footer></Footer>
         </div>
 
     );

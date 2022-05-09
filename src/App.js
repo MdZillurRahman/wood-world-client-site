@@ -13,7 +13,6 @@ import AddItems from './Components/Headers Component/Add Items/AddItems';
 import ManageItems from './Components/Headers Component/Manage Items/ManageItems';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-bootstrap';
-import Inventory from './Components/Inventory/Inventory/Inventory';
 
 function App() {
   return (
@@ -50,6 +49,8 @@ function App() {
           </RequireAuth>
         }></Route>
       </Routes>
+      
+      <Footer></Footer>
       <ToastContainer />
     </div>
   );

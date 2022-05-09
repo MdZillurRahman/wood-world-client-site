@@ -1,38 +1,56 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import useItemDetail from '../../Hooks/UseItemDetail/useItemDetail';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Footer from '../../Shared/Footer/Footer';
+import useCollection from '../../Hooks/UseCollection/useCollection';
+import useInventory from '../../Hooks/UseInventory/useInventory';
 
 const ItemDetail = () => {
     const { itemId } = useParams();
     const [item] = useItemDetail(itemId);
-    const { name, price, description, _id, img, supplierName } = item;
+    const { name, price, description, img, supplierName } = item;
+    const navigate = useNavigate();
+    const [inventory, setInventory] = useInventory();
 
+    const manageInventories = () => {
+        navigate('/collection');
+    }
 
+    const delivered = singleItem => {
+        const exists = inventory.find(item => item._id === singleItem.id);
+        if(exists){
+            const newQuantity = item.quantity - 1;
+            item.quantity = newQuantity;
+            
+            setInventory(item.quantity)
+        
+}
+    }
 
     return (
         <div>
-            <form>
+            <div>
                 <div className='w-50 mb-5 mx-auto'>
                     <img className='w-100' src={img} alt="" />
                     <h2>Name: {name}</h2>
                     <p>Price: {price} $</p>
                     <p>Quantity : {item.quantity}</p>
                     <p>Supplier Name: {supplierName}</p>
-                    <p><small>{description}</small></p>
-                    <button className='btn btn-primary'>Delivered</button>
+                    <p><small>Description : {description}</small></p>
+                    <button onClick={() => delivered(item)} className='btn btn-primary'>Delivered</button>
                 </div>
-            </form>
+            </div>
             <form>
                 <div className='w-50 mb-4 mx-auto'>
                     <input className='w-75 mb-2' type="number" name="quantity" placeholder='Add Your Quantity' /> <br />
-                    <input className='w-75 btn btn-primary' type="submit" value="Add" />
+                    <input className='w-75 btn btn-primary mb-4' type="submit" value="Add" />
+                    <input className='w-75 btn btn-primary mt-4' onClick={manageInventories} type="submit" value="Manage Inventories" />
                 </div>
             </form>
-
             <Footer></Footer>
         </div>
     );
 };
+
 
 export default ItemDetail;

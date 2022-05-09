@@ -31,13 +31,14 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link as={Link} to="collection">Collection</Nav.Link>
+
                         </Nav>
                         <Nav>
                             <Nav.Link as={Link} to="about">About</Nav.Link>
                             {
                                 user ?
                                     <>
+                                        <Nav.Link as={Link} to="collection">Collection</Nav.Link>
                                         <Nav.Link as={Link} to="additems">Add</Nav.Link>
                                         <Nav.Link as={Link} to="manageitems">Manage</Nav.Link>
                                         <NavDropdown title={<img src={UserIcon} style={{ width: '30px' }} alt="" />} id="navbarScrollingDropdown">
