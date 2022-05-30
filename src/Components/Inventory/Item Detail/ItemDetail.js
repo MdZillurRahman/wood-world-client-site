@@ -34,9 +34,6 @@ const ItemDetail = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                if (data.lastErrorObject.updatedExisting) {
-                    toast("Successfully delivered");
-                }
 
             })
 
@@ -59,7 +56,6 @@ const ItemDetail = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                toast("Successfully Added");
             })
     }
 
