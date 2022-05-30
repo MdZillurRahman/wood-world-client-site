@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Tanvir Hossain",
+        "review": "Wooden Sofa Set",
+        "img": "https://i.ibb.co/whRXZbY/people1.png",
+        "location": "California",
+        "description": "Genuine and best products. Nice Customer Support."
+    },
+    {
+        "name": "Nasima Tasnim",
+        "review": "Solid Wood Furniture",
+        "img": "https://i.ibb.co/rdzYHrk/people2.png",
+        "location": "Dhaka",
+        "description": "Genuine and best products. Nice Customer Support."
+    },
+    {
+        "name": "Khadija Shultana",
+        "review": "Wooden Sofa Set",
+        "img": "https://i.ibb.co/cy4mnV4/people3.png",
+        "location": "Canada",
+        "description": "Genuine and best products. Nice Customer Support."
+    }
+]

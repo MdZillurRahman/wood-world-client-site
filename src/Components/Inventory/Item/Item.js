@@ -18,7 +18,7 @@ const Item = ({item}) => {
             <p>Quantity : {quantity}</p>
             <p>Supplier Name: {supplierName}</p>
             <p><small>{description}</small></p>
-            <button onClick={() => navigateToItemDetail(_id)} className='btn btn-primary'>Details</button>
+            <button onClick={() => navigateToItemDetail(_id)} className='btn btn-primary'>Update</button>
         
         </div>
     );

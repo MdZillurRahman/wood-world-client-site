@@ -1,9 +1,9 @@
-.expert{
+.worker{
     border: 1px solid lightgray;
     border-radius: 10px;
     padding-bottom: 10px;
     text-align: center;
 }
-.expert h2{
+.worker h2{
     font-size: 25px;
 }

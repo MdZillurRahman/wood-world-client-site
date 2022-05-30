@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useInventory from '../../Hooks/UseInventory/useInventory';
-import Footer from '../../Shared/Footer/Footer';
 import Item from '../Item/Item';
 import './Inventory.css';
 
 const Inventory = () => {
-    const [inventory, setInventory] = useInventory();
+    const [inventory] = useInventory();
     const navigate = useNavigate();
 
     const manageInventories = () => {

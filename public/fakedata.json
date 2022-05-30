@@ -4,7 +4,7 @@
         "price": "300",
         "description": "Wooden Sofa Set for your living space. Wonderful in color and shape. Affordable for anyone.",
         "img": "https://i.ibb.co/Vx10jh6/Wooden-Furniture.png",
-        "quantity" : 20,
+        "quantity" : "20",
         "supplierName" : "nadia"
     },
     {
@@ -12,7 +12,7 @@
         "price": "150",
         "description": "Wooden Show Piece for your drawing room. You can set it in front of your fireplace.",
         "img": "https://i.ibb.co/0nnPCZH/drawing-Room.png",
-        "quantity" : 10,
+        "quantity" : "10",
         "supplierName" : "Akij"
     },
     {
@@ -20,7 +20,7 @@
         "price": "150",
         "description": "Solid Wood Furniture for your living Space. You can use it as your bed as well.",
         "img": "https://i.ibb.co/v3zyxS8/Solid-wood-furniture.png",
-        "quantity" : 30,
+        "quantity" : "30",
         "supplierName" : "Hatil"
     },
     {
@@ -28,7 +28,7 @@
         "price": "180",
         "description": "Affordable Wood Show Case for your dining room. Enough space to set your dining set into this.",
         "img": "https://i.ibb.co/XXB9fDg/wood-showcase.png",
-        "quantity" : 20,
+        "quantity" : "20",
         "supplierName" : "Otobi"
     },
     {
@@ -36,7 +36,7 @@
         "price": "100",
         "description": "Wooden Pendora Self can be used to set in your living room. Have enough space to keep magazine into the drawer.",
         "img": "https://i.ibb.co/QF6pddN/Pandora-TVC-OAK-1.png",
-        "quantity" : 15,
+        "quantity" : "15",
         "supplierName" : "nadia"
     },
     {
@@ -44,7 +44,7 @@
         "price": "300",
         "description": "Wonderful Couple Dining Table. Couple can arrange their candle light dinner easily.",
         "img": "https://i.ibb.co/nrLVK68/couple-Images.png",
-        "quantity" : 18,
+        "quantity" : "18",
         "supplierName" : "Akij"
     },
     {
@@ -52,7 +52,7 @@
         "price": "300",
         "description": "Wooden Sofa Set for your living space. Wonderful in color and shape. Affordable for anyone.",
         "img": "https://i.ibb.co/Vx10jh6/Wooden-Furniture.png",
-        "quantity" : 20,
+        "quantity" : "20",
         "supplierName" : "nadia"
     },
     {
@@ -60,7 +60,7 @@
         "price": "150",
         "description": "Wooden Show Piece for your drawing room. You can set it in front of your fireplace.",
         "img": "https://i.ibb.co/0nnPCZH/drawing-Room.png",
-        "quantity" : 10,
+        "quantity" : "10",
         "supplierName" : "Akij"
     },
     {
@@ -68,7 +68,7 @@
         "price": "150",
         "description": "Solid Wood Furniture for your living Space. You can use it as your bed as well.",
         "img": "https://i.ibb.co/v3zyxS8/Solid-wood-furniture.png",
-        "quantity" : 30,
+        "quantity" : "30",
         "supplierName" : "Hatil"
     },
     {
@@ -76,7 +76,7 @@
         "price": "180",
         "description": "Affordable Wood Show Case for your dining room. Enough space to set your dining set into this.",
         "img": "https://i.ibb.co/XXB9fDg/wood-showcase.png",
-        "quantity" : 20,
+        "quantity" : "20",
         "supplierName" : "Otobi"
     },
     {
@@ -84,7 +84,7 @@
         "price": "100",
         "description": "Wooden Pendora Self can be used to set in your living room. Have enough space to keep magazine into the drawer.",
         "img": "https://i.ibb.co/QF6pddN/Pandora-TVC-OAK-1.png",
-        "quantity" : 15,
+        "quantity" : "15",
         "supplierName" : "nadia"
     },
     {
@@ -92,7 +92,7 @@
         "price": "300",
         "description": "Wonderful Couple Dining Table. Couple can arrange their candle light dinner easily.",
         "img": "https://i.ibb.co/nrLVK68/couple-Images.png",
-        "quantity" : 18,
+        "quantity" : "18",
         "supplierName" : "Akij"
     },
     {
@@ -100,7 +100,7 @@
         "price": "300",
         "description": "Wooden Sofa Set for your living space. Wonderful in color and shape. Affordable for anyone.",
         "img": "https://i.ibb.co/Vx10jh6/Wooden-Furniture.png",
-        "quantity" : 20,
+        "quantity" : "20",
         "supplierName" : "nadia"
     },
     {
@@ -108,7 +108,7 @@
         "price": "150",
         "description": "Wooden Show Piece for your drawing room. You can set it in front of your fireplace.",
         "img": "https://i.ibb.co/0nnPCZH/drawing-Room.png",
-        "quantity" : 10,
+        "quantity" : "10",
         "supplierName" : "Akij"
     },
     {
@@ -116,7 +116,7 @@
         "price": "150",
         "description": "Solid Wood Furniture for your living Space. You can use it as your bed as well.",
         "img": "https://i.ibb.co/v3zyxS8/Solid-wood-furniture.png",
-        "quantity" : 30,
+        "quantity" : "30",
         "supplierName" : "Hatil"
     },
     {
@@ -124,7 +124,7 @@
         "price": "180",
         "description": "Affordable Wood Show Case for your dining room. Enough space to set your dining set into this.",
         "img": "https://i.ibb.co/XXB9fDg/wood-showcase.png",
-        "quantity" : 20,
+        "quantity" : "20",
         "supplierName" : "Otobi"
     },
     {
@@ -132,7 +132,7 @@
         "price": "100",
         "description": "Wooden Pendora Self can be used to set in your living room. Have enough space to keep magazine into the drawer.",
         "img": "https://i.ibb.co/QF6pddN/Pandora-TVC-OAK-1.png",
-        "quantity" : 15,
+        "quantity" : "15",
         "supplierName" : "nadia"
     },
     {
@@ -140,7 +140,7 @@
         "price": "300",
         "description": "Wonderful Couple Dining Table. Couple can arrange their candle light dinner easily.",
         "img": "https://i.ibb.co/nrLVK68/couple-Images.png",
-        "quantity" : 18,
+        "quantity" : "18",
         "supplierName" : "Akij"
     }
 ]

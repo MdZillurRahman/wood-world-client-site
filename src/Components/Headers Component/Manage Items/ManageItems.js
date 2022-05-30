@@ -8,7 +8,7 @@ const ManageItems = () => {
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure?');
         if(proceed){
-            const url = `https://thawing-badlands-17734.herokuapp.com//collection/${id}`;
+            const url = `https://thawing-badlands-17734.herokuapp.com/collection/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
