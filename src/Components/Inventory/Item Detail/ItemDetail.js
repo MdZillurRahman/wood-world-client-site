@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import useItemDetail from '../../Hooks/UseItemDetail/useItemDetail';
+import useItemDetail from '../../Hooks/UseItemDetail/UseItemDetail';
 import { useNavigate, useParams } from 'react-router-dom';
 import Footer from '../../Shared/Footer/Footer';
 import { toast } from 'react-toastify';
@@ -36,6 +36,8 @@ const ItemDetail = () => {
                 console.log(data);
 
             })
+
+            toast('Product Delivered!!');
 
     }
 
